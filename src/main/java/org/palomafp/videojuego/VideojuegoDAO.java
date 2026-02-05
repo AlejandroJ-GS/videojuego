@@ -28,6 +28,13 @@ public class VideojuegoDAO {
 
         Usuario u1 = new Usuario("Jugador1", "10", "Nivel 5", videojuegos);
         System.out.println(u1);
+        return "VideojuegoDAO{" +
+                "zonaLista=" + z1 +
+                ", mapaLista=" + m1 +
+                ", usuarioos=" + u1 +
+                ", personajes=" + p1 +
+                ", videojuegos=" + v1 +
+                '}';
     }
 
 }
