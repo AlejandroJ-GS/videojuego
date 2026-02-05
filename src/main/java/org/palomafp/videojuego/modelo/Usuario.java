@@ -6,12 +6,13 @@ public class Usuario {
     private String id;
     private String correo;
     private Personaje personaje;
-    private List<Videojuego> videojuegos;
+    private Videojuego[] videojuegos;
 
-    public Usuario(String nombre, String id, String correo) {
+    public Usuario(String nombre, String id, String correo, Videojuego[] videojuegos) {
         this.nombre = nombre;
         this.id = id;
         this.correo = correo;
+        this.videojuegos = videojuegos;
     }
 
     public String getNombre() {
@@ -63,3 +64,4 @@ public class Usuario {
                 '}';
     }
 }
+

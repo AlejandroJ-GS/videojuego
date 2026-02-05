@@ -6,13 +6,14 @@ public class Mapa {
     private String descripcion;
     private int zonas;
     private int numUsuario;
-    private List<Zona> zonasLista;
+    private Zona[] zonasLista;
 
-    public Mapa(String tamaño, String descripcion, int zonas, int numUsuario) {
+    public Mapa(String tamaño, String descripcion, int zonas, int numUsuario, Zona[] zonasLista) {
         this.tamaño = tamaño;
         this.descripcion = descripcion;
         this.zonas = zonas;
         this.numUsuario = numUsuario;
+        this.zonasLista = zonasLista;
     }
 
     public String getTamaño() {
