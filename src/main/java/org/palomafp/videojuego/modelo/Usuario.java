@@ -47,11 +47,11 @@ public class Usuario {
         this.personaje = personaje;
     }
 
-    public List<Videojuego> getVideojuegos() {
+    public Videojuego[] getVideojuegos() {
         return videojuegos;
     }
 
-    public void setVideojuegos(List<Videojuego> videojuegos) {
+    public void setVideojuegos(Videojuego[] videojuegos) {
         this.videojuegos = videojuegos;
     }
 

@@ -42,27 +42,27 @@ public class Videojuego {
         this.precio = precio;
     }
 
-    public List<Mapa> getMapas() {
+    public Mapa[] getMapas() {
         return mapas;
     }
 
-    public void setMapas(List<Mapa> mapas) {
+    public void setMapas(Mapa[] mapas) {
         this.mapas = mapas;
     }
 
-    public List<Usuario> getUsuarios() {
+    public Usuario[] getUsuarios() {
         return usuarios;
     }
 
-    public void setUsuarios(List<Usuario> usuarios) {
+    public void setUsuarios(Usuario[] usuarios) {
         this.usuarios = usuarios;
     }
 
-    public List<Personaje> getPersonajes() {
+    public Personaje[] getPersonajes() {
         return personajes;
     }
 
-    public void setPersonajes(List<Personaje> personajes) {
+    public void setPersonajes(Personaje[] personajes) {
         this.personajes = personajes;
     }
 

@@ -48,11 +48,11 @@ public class Mapa {
         this.numUsuario = numUsuario;
     }
 
-    public List<Zona> getZonasLista() {
+    public Zona[] getZonasLista() {
         return zonasLista;
     }
 
-    public void setZonasLista(List<Zona> zonasLista) {
+    public void setZonasLista(Zona[] zonasLista) {
         this.zonasLista = zonasLista;
     }
 
