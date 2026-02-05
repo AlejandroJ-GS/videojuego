@@ -1,5 +1,4 @@
 package org.palomafp.videojuego.modelo;
-import java.util.List;
 
 public class Videojuego {
     private String genero;

@@ -7,7 +7,7 @@ import org.palomafp.videojuego.modelo.Videojuego;
 import org.palomafp.videojuego.modelo.Zona;
 
 public class VideojuegoDAO {
-    public void VideojuegoInfo() {
+    public String VideojuegoInfo() {
         Zona[] zonaLista=new Zona[2];
         Mapa[] mapaLista=new Mapa[4];
         Usuario[] usuarioos=new Usuario[6];
@@ -29,4 +29,5 @@ public class VideojuegoDAO {
         Usuario u1 = new Usuario("Jugador1", "10", "Nivel 5", videojuegos);
         System.out.println(u1);
     }
+
 }
