@@ -5,14 +5,17 @@ public class Videojuego {
     private String genero;
     private String dispositivo;
     private Double precio;
-    private List<Mapa> mapas;
-    private List<Usuario> usuarios;
-    private List<Personaje> personajes;
+    private Mapa[] mapas;
+    private Usuario[] usuarios;
+    private Personaje[] personajes;
 
-    public Videojuego(String genero, String dispositivo, Double precio) {
+    public Videojuego(String genero, String dispositivo, Double precio, Mapa[] m1, Usuario[] u1, Personaje[] p1) {
         this.genero = genero;
         this.dispositivo = dispositivo;
         this.precio = precio;
+        this.mapas=m1;
+        this.usuarios=u1;
+        this.personajes=p1;
     }
 
     public String getGenero() {
