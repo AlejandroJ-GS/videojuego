@@ -1,15 +1,16 @@
 package org.palomafp.videojuego.modelo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Usuario {
     private String nombre;
     private String id;
     private String correo;
     private Personaje personaje;
-    private ArrayList <Videojuego> videojuegos=null;
+    private List<Videojuego> videojuegos;
 
-    public Usuario(String nombre, String id, String correo, ArrayList <Videojuego> videojuegos) {
+    public Usuario(String nombre, String id, String correo, List <Videojuego> videojuegos) {
         this.nombre = nombre;
         this.id = id;
         this.correo = correo;
@@ -48,11 +49,11 @@ public class Usuario {
         this.personaje = personaje;
     }
 
-    public ArrayList <Videojuego> getVideojuegos() {
+    public List <Videojuego> getVideojuegos() {
         return videojuegos;
     }
 
-    public void setVideojuegos(ArrayList <Videojuego> videojuegos) {
+    public void setVideojuegos(List <Videojuego> videojuegos) {
         this.videojuegos = videojuegos;
     }
 
