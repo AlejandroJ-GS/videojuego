@@ -1,12 +1,14 @@
 package org.palomafp.videojuego;
 
+import org.palomafp.videojuego.modelo.Videojuego;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        VideojuegoDAO dao=new VideojuegoDAO();
+        VideojuegoDAO videojuegoDAO = new VideojuegoDAO();
+        Videojuego videojuego = videojuegoDAO.getVideojuegoRandom();
 
-        dao.VideojuegoInfo();
-    
+        System.out.println( videojuego );  
     }
 }
