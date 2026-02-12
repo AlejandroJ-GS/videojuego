@@ -22,6 +22,7 @@ class Personaje{
 - int nivel
 }
 class Videojuego{
+- String codJuego
 - String género
 - String dispositivo
 - double precio
