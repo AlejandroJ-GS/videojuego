@@ -14,7 +14,7 @@ public class VideojuegoDAO {
         ArrayList <Mapa> mapaLista=new ArrayList <Mapa>();
         ArrayList <Usuario> usuarioos=new ArrayList <Usuario>();
         ArrayList <Personaje> personajes=new ArrayList <Personaje>();
-       ArrayList <Videojuego> videojuegos=new ArrayList <Videojuego>();
+        ArrayList <Videojuego> videojuegos=new ArrayList <Videojuego>();
 
         Zona z1 = new Zona("Grande", "Una zona amplia con muchos enemigos", "Bosque");
         zonaLista.add(z1);
