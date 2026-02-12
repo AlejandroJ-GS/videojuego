@@ -21,7 +21,7 @@ public class App
             default:
                 break;
         }
-    
+    sc.close();
     
     }
 }

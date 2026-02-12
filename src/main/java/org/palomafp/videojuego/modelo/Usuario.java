@@ -1,6 +1,6 @@
 package org.palomafp.videojuego.modelo;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class Usuario {
