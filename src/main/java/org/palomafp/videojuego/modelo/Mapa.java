@@ -7,7 +7,7 @@ public class Mapa {
     private String descripcion;
     private int zonas;
     private int numUsuario;
-    private ArrayList<Zona> zonasLista;
+    private ArrayList<Zona> zonasLista=null;
 
     public Mapa(String tamaño, String descripcion, int zonas, int numUsuario, ArrayList<Zona> zonasLista) {
         this.tamaño = tamaño;

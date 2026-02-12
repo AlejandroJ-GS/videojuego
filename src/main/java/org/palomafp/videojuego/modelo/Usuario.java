@@ -7,7 +7,7 @@ public class Usuario {
     private String id;
     private String correo;
     private Personaje personaje;
-    private ArrayList <Videojuego> videojuegos;
+    private ArrayList <Videojuego> videojuegos=null;
 
     public Usuario(String nombre, String id, String correo, ArrayList <Videojuego> videojuegos) {
         this.nombre = nombre;

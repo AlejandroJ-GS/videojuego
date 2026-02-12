@@ -7,9 +7,9 @@ public class Videojuego {
     private String dispositivo;
     private Double precio;
     private String codJuego;
-    private ArrayList <Mapa> mapas;
-    private ArrayList <Usuario> usuarios;
-    private ArrayList <Personaje> personajes;
+    private ArrayList <Mapa> mapas = null;
+    private ArrayList <Usuario> usuarios =null;
+    private ArrayList <Personaje> personajes=null;
 
     public Videojuego(String genero, String dispositivo, Double precio,  ArrayList <Mapa> m1, ArrayList <Usuario> u1, ArrayList <Personaje> p1 ,String codJuego) {
         this.genero = genero;
@@ -85,6 +85,7 @@ public class Videojuego {
                 ", mapa= "+ mapas+
                 ", usuario= " + usuarios +
                 ", personajes= "+ personajes +
+                ", codigo= " + codJuego +
                 '}';
     }
 }
