@@ -1,13 +1,15 @@
 package org.palomafp.videojuego.modelo;
 
+import java.util.ArrayList;
+
 public class Mapa {
     private String tamaño;
     private String descripcion;
     private int zonas;
     private int numUsuario;
-    private Zona[] zonasLista;
+    private ArrayList<Zona> zonasLista;
 
-    public Mapa(String tamaño, String descripcion, int zonas, int numUsuario, Zona[] zonasLista) {
+    public Mapa(String tamaño, String descripcion, int zonas, int numUsuario, ArrayList<Zona> zonasLista) {
         this.tamaño = tamaño;
         this.descripcion = descripcion;
         this.zonas = zonas;
@@ -47,11 +49,11 @@ public class Mapa {
         this.numUsuario = numUsuario;
     }
 
-    public Zona[] getZonasLista() {
+    public ArrayList<Zona> getZonasLista() {
         return zonasLista;
     }
 
-    public void setZonasLista(Zona[] zonasLista) {
+    public void setZonasLista(ArrayList<Zona> zonasLista) {
         this.zonasLista = zonasLista;
     }
 
@@ -62,6 +64,7 @@ public class Mapa {
                 ", descripcion='" + descripcion + '\'' +
                 ", zonas=" + zonas +
                 ", numUsuario=" + numUsuario +
+                ", zonasLista=" + zonasLista +
                 '}';
     }
 }

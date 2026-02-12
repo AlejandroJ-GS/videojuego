@@ -7,6 +7,11 @@ import org.palomafp.videojuego.modelo.Videojuego;
 import org.palomafp.videojuego.modelo.Zona;
 
 public class VideojuegoDAO {
+
+    private List<>
+    public VideojuegoDAO() {
+
+    }
     public String VideojuegoInfo() {
         Zona[] zonaLista=new Zona[2];
         Mapa[] mapaLista=new Mapa[4];
