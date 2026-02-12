@@ -7,9 +7,9 @@ public class Mapa {
     private String descripcion;
     private int zonas;
     private int numUsuario;
-    private ArrayList <Zona> zonasLista;
+    private ArrayList<Zona> zonasLista;
 
-    public Mapa(String tamaño, String descripcion, int zonas, int numUsuario, ArrayList <Zona> zonasLista) {
+    public Mapa(String tamaño, String descripcion, int zonas, int numUsuario, ArrayList<Zona> zonasLista) {
         this.tamaño = tamaño;
         this.descripcion = descripcion;
         this.zonas = zonas;
@@ -49,11 +49,11 @@ public class Mapa {
         this.numUsuario = numUsuario;
     }
 
-    public ArrayList <Zona> getZonasLista() {
+    public ArrayList<Zona> getZonasLista() {
         return zonasLista;
     }
 
-    public void setZonasLista(ArrayList <Zona> zonasLista) {
+    public void setZonasLista(ArrayList<Zona> zonasLista) {
         this.zonasLista = zonasLista;
     }
 
@@ -63,8 +63,8 @@ public class Mapa {
                 "tamaño='" + tamaño + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", zonas=" + zonas +
-                ", numUsuario=" + numUsuario + 
-                " , zona= "+ zonasLista +
+                ", numUsuario=" + numUsuario +
+                ", zonasLista=" + zonasLista +
                 '}';
     }
 }
