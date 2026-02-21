@@ -23,7 +23,7 @@ public class VideojuegoDAO {
         mapaLista1.add(m1);
         Personaje p1 = new Personaje("Guerrero", "Un personaje fuerte y resistente", 10);
         personajes1.add(p1) ;
-        Usuario u1 = new Usuario("Jugador1", "10", "Nivel 5", videojuegosLista);
+        Usuario u1 = new Usuario("Jugador1", "10", "Nivel 5");
         usuarioos1.add(u1);
         Videojuego v1 = new Videojuego("Aventura", "PC", 59.99, mapaLista1, usuarioos1, personajes1 , "1"   );
         videojuegosLista.add(v1);
@@ -38,7 +38,7 @@ public class VideojuegoDAO {
         mapaLista2.add(m2);
         Personaje p2 = new Personaje("Guerrero", "Un personaje fuerte y resistente", 10);
         personajes2.add(p2) ;
-        Usuario u2 = new Usuario("Jugador1", "10", "Nivel 5", videojuegosLista);
+        Usuario u2 = new Usuario("Jugador1", "10", "Nivel 5");
         usuarioos2.add(u2);
         Videojuego v2 = new Videojuego("Aventura", "PC", 10.99, mapaLista2, usuarioos2, personajes2 , "2"   );
         videojuegosLista.add(v2);
@@ -53,7 +53,7 @@ public class VideojuegoDAO {
         mapaLista3.add(m3);
         Personaje p3 = new Personaje("Guerrero", "Un personaje fuerte y resistente", 10);
         personajes3.add(p3) ;
-        Usuario u3 = new Usuario("Jugador1", "10", "Nivel 5", videojuegosLista);
+        Usuario u3 = new Usuario("Jugador1", "10", "Nivel 5");
         usuarioos3.add(u3);
         Videojuego v3 = new Videojuego("Aventura", "PC", 20.99, mapaLista3, usuarioos3, personajes3 , "3"   );
         videojuegosLista.add(v3);
@@ -68,7 +68,7 @@ public class VideojuegoDAO {
         mapaLista4.add(m4);
         Personaje p4 = new Personaje("Guerrero", "Un personaje fuerte y resistente", 10);
         personajes4.add(p4) ;
-        Usuario u4 = new Usuario("Jugador1", "10", "Nivel 5", videojuegosLista);
+        Usuario u4 = new Usuario("Jugador1", "10", "Nivel 5");
         usuarioos4.add(u4);
         Videojuego v4 = new Videojuego("Aventura", "PC", 70.99, mapaLista4, usuarioos4, personajes4 , "4"   );
         videojuegosLista.add(v4);

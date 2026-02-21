@@ -27,7 +27,7 @@ public class videojuegoDAOTest {
         personajes.add(p1) ;
         Videojuego v1 = new Videojuego("Aventura", "PC", 59.99, mapaLista, usuarioos, personajes , "1");
         videojuegos.add(v1);
-        Usuario u1 = new Usuario("Jugador1", "10", "Nivel 5", videojuegos);
+        Usuario u1 = new Usuario("Jugador1", "10", "Nivel 5");
         usuarioos.add(u1);
 
         VideojuegoDAO videojuegosDAO= new VideojuegoDAO();

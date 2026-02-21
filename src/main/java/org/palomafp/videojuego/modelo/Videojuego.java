@@ -78,14 +78,14 @@ public class Videojuego {
 
     @Override
     public String toString() {
-        return "Videojuego{" +
-                "genero='" + genero + '\'' +
-                ", dispositivo='" + dispositivo + '\'' +
-                ", precio=" + precio +
-                ", mapa= "+ mapas+
-                ", usuario= " + usuarios +
-                ", personajes= "+ personajes +
-                ", codigo= " + codJuego +
+        return "\nVideojuego{" +
+                "\ngenero='" + genero + 
+                "\ndispositivo='" + dispositivo +
+                "\nprecio=" + precio +
+                "\nmapa= "+ mapas+
+                "\nusuario= " + usuarios +
+                "\npersonajes= "+ personajes +
+                "\ncodigo= " + codJuego +
                 '}';
     }
 }

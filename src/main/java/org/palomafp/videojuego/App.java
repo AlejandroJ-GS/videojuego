@@ -11,27 +11,30 @@ public class App
         int idJuego;
 
         do{
-            System.out.println("1. Obtener un juego random");
+            System.out.println("\n1. Obtener un juego random");
             System.out.println("2. Obtener un juego con su id");
             System.out.println("3. Obtener todos los juegos");
             System.out.println("4. Salir");
 
+            System.out.println("Opción:");
             menu=sc.nextInt();
 
             switch (menu) {
             case 1:
-                
+                System.out.println("\nJuego random: ");
                 System.out.println(videojuegoDAO.getVideojuegoRandom());
                 
                 break;
             
             case 2:
-                System.out.println("Introduzca el id del juego:");
+                System.out.println("\nIntroduzca el id del juego(1-4):");
                 idJuego=sc.nextInt();
-                System.out.println(videojuegoDAO.getVideoJuegoByID(idJuego));
+                System.out.println("\nJuego "+idJuego+": ");
+                System.out.println(videojuegoDAO.getVideoJuegoByID(idJuego-1));
                 break;
 
             case 3:
+                System.out.println("\nTodos los juegos: ");
                 videojuegoDAO.getAllVideojuego();
                 break;
 
@@ -44,7 +47,7 @@ public class App
                 break;
             }
         }while (menu!=4);
-        
+        sc.close();
     
     }
 }
