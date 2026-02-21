@@ -1,6 +1,5 @@
 package org.palomafp.videojuego;
 import java.util.Scanner;
-import org.palomafp.videojuego.modelo.Videojuego;
 
 public class App 
 {
@@ -8,20 +7,44 @@ public class App
     {
         Scanner sc = new Scanner(System.in);
         VideojuegoDAO videojuegoDAO = new VideojuegoDAO();
-        Videojuego videojuego = videojuegoDAO.getVideojuegoRandom();
+        int menu;
+        int idJuego;
 
-        System.out.println( videojuego );  
-         
-        int menu = sc.nextInt();
-        switch (menu) {
+        do{
+            System.out.println("1. Obtener un juego random");
+            System.out.println("2. Obtener un juego con su id");
+            System.out.println("3. Obtener todos los juegos");
+            System.out.println("4. Salir");
+
+            menu=sc.nextInt();
+
+            switch (menu) {
             case 1:
                 
+                System.out.println(videojuegoDAO.getVideojuegoRandom());
+                
                 break;
-        
+            
+            case 2:
+                System.out.println("Introduzca el id del juego:");
+                idJuego=sc.nextInt();
+                System.out.println(videojuegoDAO.getVideoJuegoByID(idJuego));
+                break;
+
+            case 3:
+                videojuegoDAO.getAllVideojuego();
+                break;
+
+            case 4:
+                System.out.println("Saliendo...");
+                break;
+
             default:
+                System.out.println("No existe esta opcion.");
                 break;
-        }
-    sc.close();
+            }
+        }while (menu!=4);
+        
     
     }
 }
