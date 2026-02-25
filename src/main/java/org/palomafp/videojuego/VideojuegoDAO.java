@@ -12,6 +12,10 @@ public class VideojuegoDAO {
 
     ArrayList<Videojuego> videojuegosLista=new ArrayList<Videojuego>();
 
+    public ArrayList<Videojuego> getVideojuegosLista() {
+        return videojuegosLista;
+    }
+
     public VideojuegoDAO() {
         ArrayList <Zona> zonaLista1=new ArrayList <Zona> ();
         ArrayList <Mapa> mapaLista1=new ArrayList <Mapa>();
@@ -76,12 +80,12 @@ public class VideojuegoDAO {
 
     public Videojuego getVideojuegoRandom() {
         
-        int numeroRandom = (int)(Math.random()*((videojuegosLista.size()-1)+1));
+        int numeroRandom = (int)(Math.random()*((videojuegosLista.size())+1));
 
         return videojuegosLista.get(numeroRandom);
     }
 
-    public Videojuego getVideoJuegoByID(int posicion ) {
+    public Videojuego getVideoJuegoByCod(int posicion ) {
         
         return videojuegosLista.get(posicion);
     }
