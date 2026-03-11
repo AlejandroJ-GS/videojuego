@@ -30,7 +30,7 @@ public class App
                 System.out.println("\nIntroduzca el id del juego(1-4):");
                 idJuego=sc.nextInt();
                 System.out.println("\nJuego "+idJuego+": ");
-                System.out.println(videojuegoDAO.getVideoJuegoByID(idJuego-1));
+                System.out.println(videojuegoDAO.getVideoJuegoByCod(idJuego-1));
                 break;
 
             case 3:
