@@ -1,43 +1,31 @@
 package org.palomafp.videojuego;
-import org.palomafp.videojuego.modelo.Mapa;
-import org.palomafp.videojuego.modelo.Usuario;
 import org.palomafp.videojuego.modelo.Videojuego;
-import org.palomafp.videojuego.modelo.Personaje;
-import org.palomafp.videojuego.modelo.Zona;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.util.ArrayList;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 import org.junit.jupiter.api.Test;
 
 public class videojuegoDAOTest {
     @Test
-    public void testVideojuegoDAO() {
-        VideojuegoDAO videojuegosDAO= new VideojuegoDAO();
-        Videojuego resultadoEsperado=null;
-        for(int i=0; i<videojuegosDAO.getVideojuegosLista().size(); i++) {
-            if(videojuegosDAO.getVideojuegoRandom().equals(videojuegosDAO.getVideojuegosLista().get(i))) {
-            resultadoEsperado= videojuegosDAO.getVideojuegosLista().get(i);
-            }
-        }
-        Videojuego resultadoActual=videojuegosDAO.getVideojuegoRandom();
-        assertEquals(resultadoEsperado, resultadoActual);
+    public void testVideojuegoRandom() {
+        VideojuegoDAO videojuegosDAO = new VideojuegoDAO();
+        Videojuego videojuego1 = videojuegosDAO.getVideojuegoRandom();
+
+        assertNotNull(videojuego1);
+        assertNotEquals(0, videojuego1.getCodJuego());
+        assertNotNull(videojuego1.getMapas());
         
     }
 
     @Test
     public void testVideojuegoDAOByCod() {
         VideojuegoDAO videojuegosDAO= new VideojuegoDAO();
-        Videojuego resultadoEsperado=null;
-        for(int i=0; i<videojuegosDAO.getVideojuegosLista().size(); i++) {
-            if(videojuegosDAO.getVideojuegoRandom().equals(videojuegosDAO.getVideojuegosLista().get(i))) {
-            resultadoEsperado= videojuegosDAO.getVideojuegosLista().get(i);
-            }
-        }
-        Videojuego resultadoActual=videojuegosDAO.getVideojuegoRandom();
-        assertEquals(resultadoEsperado, resultadoActual);
-        
+     Videojuego videojuego1 = videojuegosDAO.getVideoJuegoByCod(1);
+        assertNotNull(videojuego1.getMapas());
+        assertEquals(videojuego1.getGenero(), "Aventura");
     }
 
 
