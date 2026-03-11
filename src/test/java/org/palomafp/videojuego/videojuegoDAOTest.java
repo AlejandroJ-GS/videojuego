@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 
 public class videojuegoDAOTest {
     @Test
-    public void testVideojuegoDAORandom() {
+    public void testVideojuegoDAO() {
         VideojuegoDAO videojuegosDAO= new VideojuegoDAO();
         Videojuego resultadoEsperado=null;
         for(int i=0; i<videojuegosDAO.getVideojuegosLista().size(); i++) {
