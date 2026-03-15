@@ -27,6 +27,11 @@ public class videojuegoDAOTest {
         assertNotNull(videojuego1.getMapas());
         assertEquals(videojuego1.getGenero(), "Aventura");
     }
-
+    @Test
+    public void testVideojuegoDAOGetAll() {
+        VideojuegoDAO videojuegosDAO= new VideojuegoDAO();
+        assertNotNull(videojuegosDAO.getVideojuegosLista());
+        assertEquals(videojuegosDAO.getVideojuegosLista().size(), 4);
+    }
 
 }
