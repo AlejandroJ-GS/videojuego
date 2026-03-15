@@ -8,14 +8,25 @@ import org.palomafp.videojuego.modelo.Usuario;
 import org.palomafp.videojuego.modelo.Videojuego;
 import org.palomafp.videojuego.modelo.Zona;
 
+/**
+ * Objeto Videojuego que tiene una lista con sus diferentes metodos
+ */
 public class VideojuegoDAO {
 
+    //Lista de videojuegos
     ArrayList<Videojuego> videojuegosLista=new ArrayList<Videojuego>();
 
+    /**
+     * Devuelve la informacion de los videojuegos de la lista
+     * @return informacion de los videojuegos de la lista
+     */
     public ArrayList<Videojuego> getVideojuegosLista() {
         return videojuegosLista;
     }
 
+    /**
+     * Constructor que crea cuatro objetos y los añade a la lista videojuegos al instanciar un objeto VideojuegoDAO
+     */
     public VideojuegoDAO() {
         ArrayList <Zona> zonaLista1=new ArrayList <Zona> ();
         ArrayList <Mapa> mapaLista1=new ArrayList <Mapa>();
@@ -78,18 +89,29 @@ public class VideojuegoDAO {
         videojuegosLista.add(v4);
     }
 
+    /**
+     * Devuelve un videojuego random de la lista videojuegos
+     * @return videojuego random de la lista videojuegos
+     */
     public Videojuego getVideojuegoRandom() {
-        
+        //Genera un numero aleatorio entre 0 y el tamaño de la lista
         int numeroRandom = (int)(Math.random()*((videojuegosLista.size())+1));
-
         return videojuegosLista.get(numeroRandom);
     }
 
-    public Videojuego getVideoJuegoByCod(int posicion ) {
+    /**
+     * Devuelve un videojuego de la lista con el codigo introducido
+     * @param cod codigo del videojuego
+     * @return videojuego de la lista con el codigo introducido
+     */
+    public Videojuego getVideoJuegoByCod(int cod ) {
         
-        return videojuegosLista.get(posicion);
+        return videojuegosLista.get(cod);
     }
 
+    /**
+     * Devuelve todos los videojuegos de la lista
+     */
     public void getAllVideojuego (){
         for (Videojuego videojuego : videojuegosLista) {
             System.out.println(videojuego);

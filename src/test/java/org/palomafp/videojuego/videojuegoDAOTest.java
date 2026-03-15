@@ -33,9 +33,10 @@ public class videojuegoDAOTest {
     @Test
     public void testVideojuegoDAOByCod() {
         VideojuegoDAO videojuegosDAO= new VideojuegoDAO();
-     Videojuego videojuego1 = videojuegosDAO.getVideoJuegoByCod(1);
+        Videojuego videojuego1 = videojuegosDAO.getVideoJuegoByCod(1);
         assertNotNull(videojuego1.getMapas());
-        assertEquals(videojuego1.getGenero(), "Aventura");
+        assertEquals("Aventura", videojuego1.getGenero() );
+        assertEquals(10.99, videojuego1.getPrecio());
     }
 
     /**
@@ -46,7 +47,7 @@ public class videojuegoDAOTest {
     public void testVideojuegoDAOGetAll() {
         VideojuegoDAO videojuegosDAO= new VideojuegoDAO();
         assertNotNull(videojuegosDAO.getVideojuegosLista());
-        assertEquals(videojuegosDAO.getVideojuegosLista().size(), 4);
+        assertEquals(4, videojuegosDAO.getVideojuegosLista().size());
     }
 
 }
