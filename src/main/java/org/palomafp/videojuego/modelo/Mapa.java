@@ -29,77 +29,79 @@ public class Mapa {
     }
 /**
  * nos devuelve el tamaño del mapa
- * @return 
+ * @return tamaño del mapa
  */
     public String getTamaño() {
         return tamaño;
     }
 /**
  * establecemos el tamaño del mapa
- * @param tamaño
+ * @param tamaño tamaño del mapa
  */
     public void setTamaño(String tamaño) {
         this.tamaño = tamaño;
     }
 /**
  * nos devuelve la descripcion del mapa
- * @return 
+ * @return descripcion del mapa
  */
     public String getDescripcion() {
         return descripcion;
     }
 /**
  * establecemos la descripcion del mapa
- * @param descripcion
+ * @param descripcion descripcion del mapa
  */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 /**
  * nos devuelve las zonas del mapa
- * @return 
+ * @return las zonas del mapa
  */
     public int getZonas() {
         return zonas;
     }
 /**
  * establecemos las zonas del mapa
- * @param zonas 
+ * @param zonas zonas del mapa
  */
     public void setZonas(int zonas) {
         this.zonas = zonas;
     }
 /**
  * nos devuelve el numero de usuarios del mapa
- * @return 
+ * @return numero de usuarios del mapa
  */
     public int getNumUsuario() {
         return numUsuario;
     }
 /**
  * establecemos el numero de usuarios del mapa
- * @param numUsuario
+ * @param numUsuario numero de usuarios del mapa
  */
     public void setNumUsuario(int numUsuario) {
         this.numUsuario = numUsuario;
     }
 /**
  * nos devuelve una lista de las zonas del mapa
- * @return 
+ * @return lista de las zonas del mapa
  */
     public ArrayList<Zona> getZonasLista() {
         return zonasLista;
     }
-/**
- * establecemos una lista de las zonas del mapa del mapa
- * @param tamaño
- */
+
+    /**
+     * establecemos una lista de las zonas del mapa del mapa
+     * @param zonasLista lista de las zonas del mapa del mapa
+     */
     public void setZonasLista(ArrayList<Zona> zonasLista) {
         this.zonasLista = zonasLista;
     }
-/**
- * es un metodo sobre el mapa que nos dice todos los atributos
- */
+
+    /**
+    * es un metodo sobre el mapa que nos dice todos los atributos
+    */
     @Override
     public String toString() {
         return "Mapa{" +

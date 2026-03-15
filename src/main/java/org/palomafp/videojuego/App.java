@@ -2,10 +2,21 @@ package org.palomafp.videojuego;
 import java.util.Scanner;
 
 /**
- * Clase principal App
+ * Obejto App
+ * @author Cristina Xu y Alejandro Gónzalez
  */
 public class App 
 {
+    /**
+     * Constructor por defecto
+     */
+    public App() {
+
+    }
+    /**
+     * Calse principal de la clase App
+     * @param args argumentos de la clase
+     */
     public static void main( String[] args )
     {
         Scanner sc = new Scanner(System.in);

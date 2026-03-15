@@ -21,42 +21,42 @@ public class Personaje {
     }
 /**
  * nos devuelve el rol del personaje
- * @return
+ * @return rol del personaje
  */
     public String getRol() {
         return rol;
     }
 /**
  * establecemos el rol del personaje
- * @param rol
+ * @param rol rol del personaje
  */
     public void setRol(String rol) {
         this.rol = rol;
     }
 /**
  * nos devuelve la descripcion del personaje
- * @return
+ * @return descripcion del personaje
  */
     public String getDescripcion() {
         return descripcion;
     }
 /**
  * establecemos la descripcion del personaje
- * @param descripcion
+ * @param descripcion descripcion del personaje
  */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 /**
  * nos devuelve el nivel del personaje
- * @return
+ * @return nivel del personaje
  */
     public int getNivel() {
         return nivel;
     }
 /**
  * establecemos el nivel del personaje
- * @param nivel
+ * @param nivel nivel del personaje
  */
     public void setNivel(int nivel) {
         this.nivel = nivel;

@@ -22,54 +22,58 @@ public class Usuario {
     }
 /**
  * nos devuelve el nombre del usuario
- * @return
+ * @return nombre del usuario
  */
     public String getNombre() {
         return nombre;
     }
 /**
  * establecemos el nombre del usuario
- * @param nombre
+ * @param nombre nombre del usuario
  */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 /**
  * nos devuelve el id del usuario
- * @return
+ * @return id del usuario
  */
     public String getId() {
         return id;
     }
 /**
  * establecemos el id del usuario
- * @param id
+ * @param id id del usuario
  */
     public void setId(String id) {
         this.id = id;
     }
 /**
  * nos devuelve el correo del usuario
- * @return
+ * @return correo del usuario
  */
     public String getCorreo() {
         return correo;
     }
 /**
  * establecemos el correo del usuario
- * @param correo
+ * @param correo correo del usuario
  */
     public void setCorreo(String correo) {
         this.correo = correo;
     }
 /**
  * nos devuelve el personaje del usuario
- * @return
+ * @return personaje del usuario
  */
     public Personaje getPersonaje() {
         return personaje;
     }
 
+    /**
+     * Establece el personaje del usuario
+     * @param personaje personaje del usuario
+     */
     public void setPersonaje(Personaje personaje) {
         this.personaje = personaje;
     }

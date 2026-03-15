@@ -95,7 +95,7 @@ public class VideojuegoDAO {
      */
     public Videojuego getVideojuegoRandom() {
         //Genera un numero aleatorio entre 0 y el tamaño de la lista
-        int numeroRandom = (int)(Math.random()*((videojuegosLista.size())+1));
+        int numeroRandom = (int)(Math.random()*((videojuegosLista.size())));
         return videojuegosLista.get(numeroRandom);
     }
 
