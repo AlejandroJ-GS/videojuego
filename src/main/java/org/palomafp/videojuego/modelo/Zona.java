@@ -2,7 +2,7 @@ package org.palomafp.videojuego.modelo;
 
 /**
  * Objeto zona con atributos de tamaño, descripción y tipo
- * @author Cristina Xu y Alejandro
+ * @author CN815 y AlejandroJ-GS
  * @version 1.0
  */
 public class Zona {

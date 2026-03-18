@@ -1,7 +1,7 @@
 package org.palomafp.videojuego.modelo;
 /**
  es un objeto de tipo Usuario que tiene una serie de atributos ( nombre , id , correo , personaje )
- * @author Alejandro y Cristina
+ * @author AlejandroJ-GS y CN815
  * @version 1.0
  */
 public class Usuario {
@@ -13,7 +13,7 @@ public class Usuario {
  * constructor de usuario donde definimos los atributos de usuario
  * @param nombre se trata del nombre del usuario
  * @param id se trata del id del usuario  
- * @param correo se trata del correo electronico del usuario
+ * @param correo se trata del correo electrónico del usuario
  */
     public Usuario(String nombre, String id, String correo) {
         this.nombre = nombre;

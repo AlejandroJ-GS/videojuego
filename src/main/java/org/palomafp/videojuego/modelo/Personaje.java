@@ -1,7 +1,7 @@
 package org.palomafp.videojuego.modelo;
 /**
  * es un objeto de tipo personaje que tiene una serie de atributos (rol , descripcion , nivel )
- * @author Alejandro y Cristina
+ * @author AlejandroJ-GS y CN815
  * @version 1.0
  */
 public class Personaje {
