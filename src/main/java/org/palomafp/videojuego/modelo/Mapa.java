@@ -3,7 +3,7 @@ package org.palomafp.videojuego.modelo;
 import java.util.ArrayList;
 /**
  * es un objeto de tipo mapa que tiene una serie de atributos (tamaño , descripcion , zonas numUsuario y un arrays de las zonas )
- * @author Alejandro y Cristina
+ * @author AlejandroJ-GS y CN815
  * @version 1.0
  */
 public class Mapa {
