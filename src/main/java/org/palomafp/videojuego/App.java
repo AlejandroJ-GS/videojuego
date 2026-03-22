@@ -83,7 +83,7 @@ public class App {
             } while (menu != 4);
             sc.close();
         } catch (Exception e) {
-            System.out.println("error introduce un numero valido");
+            System.out.println("Error: introduce un numero valido");
         }
     }
 }
