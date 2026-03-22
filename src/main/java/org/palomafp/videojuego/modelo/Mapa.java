@@ -109,7 +109,7 @@ public class Mapa {
                 ", descripcion='" + descripcion + '\'' +
                 ", zonas=" + zonas +
                 ", numUsuario=" + numUsuario +
-                ", zonasLista=" + zonasLista +
+                ", \nZonas Lista=" + zonasLista +
                 '}';
     }
 }

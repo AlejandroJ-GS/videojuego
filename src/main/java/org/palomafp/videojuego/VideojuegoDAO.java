@@ -100,7 +100,8 @@ public class VideojuegoDAO {
     public Videojuego getVideoJuegoByCod(int cod ) {
         
         return videojuegosLista.get(cod);
-    }
+    }1
+    
 
     /**
      * Devuelve la informacion de los videojuegos de la lista
