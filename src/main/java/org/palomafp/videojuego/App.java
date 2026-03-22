@@ -26,7 +26,7 @@ public class App
         int menu;
         //id de un juego
         int idJuego;
-
+         try{
         do{
             //Menu con las diferentes opciones
             System.out.println("\n1. Obtener un juego random");
@@ -35,9 +35,10 @@ public class App
             System.out.println("4. Salir");
 
             //Pedir al usuario que accion quiere realizar
+           
             System.out.println("Opción:");
             menu=sc.nextInt();
-
+            
             switch (menu) {
             //Obtener un juego random
             case 1:
@@ -70,8 +71,11 @@ public class App
                 System.out.println("No existe esta opcion.");
                 break;
             }
+            
         }while (menu!=4);
         sc.close();
-    
+        }catch(Exception e){
+                System.out.println("error introduce un numero valido");
+            }
     }
 }
