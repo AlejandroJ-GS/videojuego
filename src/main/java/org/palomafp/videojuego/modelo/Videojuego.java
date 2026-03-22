@@ -167,6 +167,6 @@ public class Videojuego {
                 "\n" + usuarios +
                 "\n"+ personajes +
                 "\nCódigo juego: " + codJuego +
-                '}';
+                "}\n";
     }
 }

@@ -57,7 +57,7 @@ public class App
             //Obtener todos los videojuegos de la lista
             case 3:
                 System.out.println("\nTodos los juegos: ");
-                videojuegoDAO.getAllVideojuego();
+                System.out.println(videojuegoDAO.getAllVideojuego());
                 break;
             
             //Salir del programa
