@@ -10,6 +10,7 @@ import org.palomafp.videojuego.modelo.Zona;
 
 /**
  * Objeto Videojuego que tiene una lista con sus diferentes metodos
+ * @author Cristina Xu y Alejandro Gónzalez
  */
 public class VideojuegoDAO {
 

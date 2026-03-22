@@ -75,7 +75,7 @@ public class Zona {
     }
 
     /**
-     * Devuelve toda la informacion de la zona.
+     * Devuelve toda la información de la zona.
      */
     @Override
     public String toString() {

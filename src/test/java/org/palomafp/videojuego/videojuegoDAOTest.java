@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Clase de pruebas para comprobar el funcionamiento de los métodos
  * de la clase VideojuegoDAO.
+ * @author Cristina Xu y Alejandro Gónzalez
  */
 public class videojuegoDAOTest {
     /**

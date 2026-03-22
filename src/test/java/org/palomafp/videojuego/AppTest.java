@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Unit test for simple App.
+ * @author Cristina Xu y Alejandro Gónzalez
  */
 public class AppTest 
 {

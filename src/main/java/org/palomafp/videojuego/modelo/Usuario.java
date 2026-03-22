@@ -1,7 +1,7 @@
 package org.palomafp.videojuego.modelo;
 /**
  es un objeto de tipo Usuario que tiene una serie de atributos ( nombre , id , correo , personaje )
- * @author Alejandro y Cristina
+  * @author Cristina Xu y Alejandro Gónzalez
  * @version 1.0
  */
 public class Usuario {

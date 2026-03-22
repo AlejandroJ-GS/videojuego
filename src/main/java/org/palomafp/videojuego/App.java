@@ -2,7 +2,7 @@ package org.palomafp.videojuego;
 import java.util.Scanner;
 
 /**
- * Obejto App
+ * Objeto App
  * @author Cristina Xu y Alejandro Gónzalez
  */
 public class App 
@@ -14,7 +14,7 @@ public class App
 
     }
     /**
-     * Calse principal de la clase App
+     * Clase principal de la clase App
      * @param args argumentos de la clase
      */
     public static void main( String[] args )

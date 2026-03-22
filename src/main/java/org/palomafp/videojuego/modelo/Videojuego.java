@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Objeto zona con atributos genero, dispositivo, precio, codJuego, una lista de mapas, lista de usuarios y lista de personajes
+ * @author Cristina Xu y Alejandro Gónzalez
  */
 public class Videojuego {
     //Indica el genero del videojuego
@@ -155,7 +156,7 @@ public class Videojuego {
     }
 
     /**
-     * Devuelve toda la informacion del videojuego
+     * Devuelve toda la información del videojuego
      */
     @Override
     public String toString() {
