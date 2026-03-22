@@ -46,8 +46,8 @@ public class videojuegoDAOTest {
     @Test
     public void testVideojuegoDAOGetAll() {
         VideojuegoDAO videojuegosDAO= new VideojuegoDAO();
-        assertNotNull(videojuegosDAO.getVideojuegosLista());
-        assertEquals(4, videojuegosDAO.getVideojuegosLista().size());
+        assertNotNull(videojuegosDAO.getAllVideojuego());
+        assertEquals(4, videojuegosDAO.getAllVideojuego().size());
     }
 
 }

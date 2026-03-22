@@ -16,13 +16,6 @@ public class VideojuegoDAO {
     //Lista de videojuegos
     ArrayList<Videojuego> videojuegosLista=new ArrayList<Videojuego>();
 
-    /**
-     * Devuelve la informacion de los videojuegos de la lista
-     * @return informacion de los videojuegos de la lista
-     */
-    public ArrayList<Videojuego> getVideojuegosLista() {
-        return videojuegosLista;
-    }
 
     /**
      * Constructor que crea cuatro objetos y los añade a la lista videojuegos al instanciar un objeto VideojuegoDAO
@@ -110,11 +103,10 @@ public class VideojuegoDAO {
     }
 
     /**
-     * Devuelve todos los videojuegos de la lista
+     * Devuelve la informacion de los videojuegos de la lista
+     * @return informacion de los videojuegos de la lista
      */
-    public void getAllVideojuego (){
-        for (Videojuego videojuego : videojuegosLista) {
-            System.out.println(videojuego);
-        }
+    public ArrayList<Videojuego> getAllVideojuego() {
+        return videojuegosLista;
     }
 }
